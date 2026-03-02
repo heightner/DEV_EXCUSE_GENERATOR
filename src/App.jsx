@@ -1,10 +1,16 @@
 import React from 'react'
+import { ExcuseProvider } from './context/ExcuseContext'
+import ExcuseCard from './components/ExcuseCard'
+import GenerateBtn from './components/GenerateBtn'
 
 const App = () => {
   return (
-    <div>
-      
-    </div>
+    <ExcuseProvider>
+      <div className="min-h-screen flex flex-col items-center justify-center gap-4">
+        <ExcuseCard />
+        <GenerateBtn />
+      </div>
+    </ExcuseProvider>
   )
 }
 
