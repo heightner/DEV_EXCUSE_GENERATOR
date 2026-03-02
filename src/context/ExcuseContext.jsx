@@ -7,7 +7,6 @@ export const ExcuseProvider = ({ children }) => {
     const [lastExcuse, setLastExcuse] = useState([]);
 
     const generateExcuses = () => {
-        console.log('Generating excuse...')
         const currentExcuse = getRandomExcuse();
         setLastExcuse(prev => [...prev, currentExcuse]);
     }
