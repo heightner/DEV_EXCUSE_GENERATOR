@@ -1,5 +1,5 @@
 import React from 'react'
-import { ExcuseProvider } from './context/ExcuseContext'
+import { ExcuseProvider } from './context/ExcuseProvider'
 import ExcuseCard from './components/ExcuseCard'
 import GenerateBtn from './components/GenerateBtn'
 

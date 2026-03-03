@@ -1,19 +1,3 @@
-import { createContext, useState } from "react";
-import getRandomExcuse from "../utils/getRandomExcuse";
+import { createContext } from "react";
 
 export const ExcuseContext = createContext();
-
-export const ExcuseProvider = ({ children }) => {
-    const [lastExcuse, setLastExcuse] = useState([]);
-
-    const generateExcuses = () => {
-        const currentExcuse = getRandomExcuse();
-        setLastExcuse(prev => [...prev, currentExcuse]);
-    }
-
-    return (
-        <ExcuseContext.Provider value={{ lastExcuse, generateExcuses }}>
-            {children}
-        </ExcuseContext.Provider>
-    )
-}
